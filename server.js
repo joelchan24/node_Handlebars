@@ -3,7 +3,7 @@ const app = express()
  // hbs
  const hbs = require('hbs');
 
-require('./hbs/helpers.js')
+require('./hbs/helpers');
  const port=process.env.PORT||8080;
 //crear publuc midleware se ejecuta siempre sin importar el url
 app.use(express.static(__dirname+'/public'));

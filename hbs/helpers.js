@@ -7,3 +7,8 @@ hbs.registerHelper('capitalizar',(text)=>{
     })
     return palabras.join(' ');
   })
+
+
+  hbs.registerHelper('getAnio',()=>{
+      return new Date().getFullYear();
+  })
